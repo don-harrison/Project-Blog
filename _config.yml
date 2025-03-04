@@ -2,3 +2,4 @@ theme: minima
 Title: Project Blog
 author: Donald Harrison
 description: Welcome to my Project Blog! Here I detail some of the side projects I work on in my free time to keep track of how I've done stuff.
+baseurl: "/Project-Blog"
