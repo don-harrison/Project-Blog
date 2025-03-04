@@ -1,10 +1,14 @@
 ---
-layout: blog_card
+layout: default
 title: Home
 ---
 
 # Welcome to My Website
 
-{% for post in site.posts %}
-- **[{{ post.date-post.title }}]({{ post.url }})** - {{ post.date | date: "%B %d, %Y" }}
-{% endfor %}
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
