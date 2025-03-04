@@ -5,8 +5,6 @@ title: Home
 
 # Welcome to My Blog
 
-Here are my latest posts:
-
 <div class="container mt-4">
     <div class="row">
         {% for post in site.posts %}
