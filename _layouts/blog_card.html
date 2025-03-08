@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, length=200px, initial-scale=1.0">
     <title>Blog Post Example</title>
     
     <!-- Bootstrap CSS -->
@@ -16,11 +16,22 @@
         .blog-date {
             font-size: 0.9rem;
             color: #6c757d;
+        .card {
+            height: 250px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: flex;
+            flex-direction: column;
         }
+        .card-body {
+            flex-grow: 1;
+            overflow: hidden;
+        }
+    }
     </style>
 </head>
 <body>
-    {{ content }}
+    <p>{{ post.content | truncatewords: 30 }}</p>
     <!-- Bootstrap JS (Optional) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
